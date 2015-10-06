@@ -1,0 +1,91 @@
+{
+	"dateFormat": "yyyy-MM-dd HH:MM",
+	"toast": {
+		"saved": "保存しました"
+	},
+	"main": {
+		"select_root": "ルートを選択",
+		"news": "最近更新したファイル",
+		"comment": {
+			"title": "コメント",
+			"submit": "投稿する",
+			"help": " (ファイルが保存されます)"
+		},
+		"welcome": "ようこそ",
+		"welcome_message": "# MdNote\nようこそ!\n\nMdNoteではフォルダにノートを作成します。\n\nまずはノートを作成するフォルダを選択しましょう。\n\nクラウドストレージにノートを作成すると端末間でノートを共有できるのでおすすめです。",
+		"external_updated": "編集中のファイルに変更がありました。読み込みますか?(編集中の内容が破棄されます)",
+		"before_publish": "公開前に保存してください",
+		"before_settings": "設定を変更する前にファイルを保存してください",
+		"published": "公開しました",
+		"publishedNotSaved": "公開しましたが、保存に失敗しました",
+		"closeOnEditing": "編集中のファイルがあります、終了しますか?",
+		"openOnEditing": "編集中のファイルがありますが、よろしいですか?",
+		"commented": "コメントしました",
+		"deleteComment": "コメントを削除します",
+		"commentDeleted": "コメントを削除しました"
+	},
+	"publishDialog": {
+		"pageTitle": "リモート投稿",
+		"title": "投稿のタイトル",
+		"account": "アカウントを選択",
+		"buttons": {
+			"cancel": "キャンセル",
+			"publish": "公開する"
+		},
+		"errors": {
+			"title": "タイトルが未設定です"
+		}
+	},
+	"settings": {
+		"pageTitle": "設定",
+		"rootDir": {
+			"title": "ルートディレクトリ",
+			"select": "選択する",
+			"selected": "再選択する",
+			"add": "追加する"
+		},
+		"editorType": {
+			"title": "エディタタイプ",
+			"help": "設定を反映するには、このアプリを再起動する必要があります。"
+		},
+		"comment": {
+			"title": "コメント機能",
+			"description": "クラウドストレージサービスなどを使いファイルを共有すると、コメントのやりとりができます。",
+			"displayName": "表示名",
+			"help": "OFFにすると通知も行われなくなります。"
+		},
+		"publish": {
+			"title": "リモート投稿アカウント設定",
+			"description": "ブログや各種サービスへと投稿するアカウントを設定します。",
+			"buttons": {
+				"new": "新規追加",
+				"publishRemove": "削除する",
+				"oauth": "認証する",
+				"oauthRemove": "解除する"
+			},
+			"name": "名前",
+			"protocol": "プロトコル",
+			"url": "新規投稿URL",
+			"userName": "ユーザID",
+			"password": "パスワード",
+			"blogName": "ブログID",
+			"documentType": "投稿形式",
+			"imageWidth": "画像の横幅",
+			"oauth": {
+				"state": "状態",
+				"completed": "認証済",
+				"disabled": "未認証"
+			},
+			"help": {
+				"documentType": "注意:markdown書式は、画像のアップロードに対応していません。"
+			},
+			"message": {
+				"correct": "認証しました"
+			},
+			"helpLink": "使い方"
+		},
+		"confirm": {
+			"delete": "削除しますか?"
+		}
+	}
+}

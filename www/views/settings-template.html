@@ -1,0 +1,53 @@
+﻿<md-bottom-sheet class="md-list md-has-header mdnote-settings">
+    <section class="mdnote-settings-header">
+        <a aria-label="settings" class="mdnote-close-btn" ng-click="setting.closeSettings($event)">X</a>
+    </section>
+    
+    <section class="mdnote-settings-main">
+        <div class="mdnote-setting-panel">
+            
+            
+            <!-- select root -->
+            <h2 translate="settings.rootDir.title">Root directory</h2>
+            <div class="mdnote-file-select">
+                <label for="settingRootDir">
+                    <md-icon md-svg-src="vendor/icons/ic_folder_24px.svg" class="icon-image-color"></md-icon>
+                    <span>{{setting.explorer.rootDir.isSelected() ? setting.explorer.rootDir.name : ("settings.rootDir.select" | translate)}}</span>
+                </label>
+                <input type="file" id="settingRootDir" class="file" webkitdirectory ngf-select ngf-change="setting.setRootDir($file)" />
+            </div>
+            
+            <div class="mdnote-file-select" ng-repeat="subDir in setting.explorer.subDirs.dirs">
+                <label for="settingSubDir{{$index}}">
+                    <a ng-click="setting.removeSubDir($index)"><md-icon md-svg-src="vendor/icons/ic_folder_24px.svg" class="icon-image-color"></md-icon>
+                    <span>{{subDir.name}}</span> -</a>
+                </label>
+            </div>
+            <div class="mdnote-file-select" ng-if="setting.explorer.rootDir.isSelected()">
+                <label for="settingInsertSubDir">
+                    <span class="normal-button" translate="settings.rootDir.add">Add</span>
+                </label>
+                <input type="file" id="settingInsertSubDir" class="file" webkitdirectory ngf-select ngf-change="setting.setSubDir($file)" />
+            </div>
+        
+        
+            <!-- editor type -->
+            <h2 translate="settings.editorType.title">Editor Type</h2>
+            <div class="mdnote-editor-type">
+                <label>
+                    <input type="radio" ng-model="setting.data.editorType" value="default" />
+                    default
+                </label>
+                <label>
+                    <input type="radio" ng-model="setting.data.editorType" value="vim" />
+                    vim
+                </label>
+                <p class="mdnote-help" translate="settings.editorType.help"></p>
+            </div>
+            
+            
+            
+        </div>
+    </section>
+</md-bottom-sheet>
+

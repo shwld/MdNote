@@ -1,0 +1,10 @@
+{
+    "compilerOptions": { 
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "out": "scripts/solutionOverrides.js",
+        "target": "es5"
+    }
+}

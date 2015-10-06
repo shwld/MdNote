@@ -1,0 +1,12 @@
+<md-dialog aria-label="Create file">
+  <form ng-keydown="onKeyDown($event)">
+    <md-dialog-content>
+      <p>{{node.name}}/<input type="text" ng-model="fileName" id="mdnote-new-filename" />.md</p>
+    </md-dialog-content>
+    <div class="md-actions" layout="row">
+      <md-button ng-click="cancel()" class="md-primary">Cancel</md-button>
+      <md-button ng-click="create()" class="md-primary image-color">OK</md-button>
+    </div>
+  </form>
+</md-dialog>
+

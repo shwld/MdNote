@@ -1,0 +1,91 @@
+{
+	"dateFormat": "dd-MM-yyyy HH:MM",
+	"toast": {
+		"saved": "saved!"
+	},
+	"main": {
+		"select_root": "select root directory",
+		"news": "History",
+		"comment": {
+			"title": "Comment",
+			"submit": "submit",
+			"help": " (with file save)"
+		},
+		"welcome": "Welcome!",
+		"welcome_message": "# MdNote\nWelcome!\n\nFirst of all, please select a folder.\n\nCloud storage is recommended.",
+		"external_updated": "While editing a file were changed. Do you load it? (Edit in content will be destroyed)",
+		"before_publish": "Please save ago you publish",
+		"before_settings": "Please save the file before you can change the settings",
+		"published": "published!",
+		"publishedNotSaved": "published! but not saved",
+		"closeOnEditing": "While editing a file, or quit?",
+		"openOnEditing": "While editing a file there, OK?",
+		"commented": "commented!",
+		"deleteComment": "remove comment",
+		"commentDeleted": "comment removed!"
+	},
+	"publishDialog": {
+		"pageTitle": "Publishing",
+		"title": "post title",
+		"account": "account",
+		"buttons": {
+			"cancel": "cancel",
+			"publish": "publish"
+		},
+		"errors": {
+			"title": "title is empty"
+		}
+	},
+	"settings": {
+		"pageTitle": "Settings",
+		"rootDir": {
+			"title": "root directory",
+			"select": "select",
+			"selected": "change",
+			"add": "add"
+		},
+		"editorType": {
+			"title": "editor type",
+			"help": "To reflect the settings, restart the app."
+		},
+		"comment": {
+			"title": "Comment",
+			"description": "Use cloud storage service, such as file sharing, and exchange of comments.",
+			"displayName": "display name",
+			"help": "To turn OFF notifications no longer."
+		},
+		"publish": {
+			"title": "Publishing account",
+			"description": "Sets the account to post to blogs and other services.",
+			"buttons": {
+				"new": "create",
+				"publishRemove": "delete",
+				"oauth": "authenticate",
+				"oauthRemove": "remove"
+			},
+			"name": "name",
+			"protocol": "protocol",
+			"url": "url(create post api)",
+			"userName": "user id",
+			"password": "password",
+			"blogName": "blog id",
+			"documentType": "document type",
+			"imageWidth": "image width",
+			"oauth": {
+				"state": "state",
+				"completed": "authenticated",
+				"disabled": "unauthenticated"
+			},
+			"help": {
+				"documentType": "Note: markdown formatting is not enabled image uploading."
+			},
+			"message": {
+				"correct": "authenticated!"
+			},
+			"helpLink": "How to use"
+		},
+		"confirm": {
+			"delete": "delete?"
+		}
+	}
+}

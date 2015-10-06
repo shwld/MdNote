@@ -1,0 +1,478 @@
+.image-color {
+    background-color:orange !important;
+    color: white !important;
+}
+.image-color:hover {
+    background-color:darkorange !important;
+    color: white !important;
+}
+.image-color-focus {
+    background-color:rgba(255,140,0,0.3) !important;
+    color: #333 !important;
+}
+.image-color-focus:hover {
+    background-color:darkorange !important;
+    color: white !important;
+}
+.icon-image-color svg path {
+    fill: darkorange !important;
+}
+.icon-white svg path {
+    fill: white !important;
+}
+
+.normal-button {
+    border: solid 1px #dedede;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+.normal-button:hover {
+    border: solid 1px #fafafa;
+    background-color: #dedede;
+}
+.background-blue {
+    background-color: #cdcdff;
+}
+.background-red {
+    background-color: #ffcdcd;
+}
+
+/* splash */
+#mdnote-splash {
+    width:100vw;
+    height:100vh;
+    background-color:orange;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+/* header */
+#mdnote-header {
+    background-color: #333;
+    height: 6vh;
+    padding:0;
+    margin:0;
+    position:relative;
+}
+#mdnote-header .mdnote-title {
+    color:white;
+    position:absolute;
+    bottom:7px;
+    left:15px;
+}
+#mdnote-header .mdnote-title .mdnote-update-mark {
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-right: 5px;
+}
+
+/* */
+.mdnote-nav {
+    position: fixed;
+    right: 5px;
+    top: 40%;
+    z-index:10;
+}
+
+.mdnote-get-start {
+    padding-left:30px;
+}
+
+#mdnote-body {
+    height:93vh;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+}
+
+#mdnote-editor .CodeMirror {
+    height:93vh;
+    min-height:93vh;
+    width:100%;
+}
+
+#mdnote-viewer-wrapper {
+    position: relative;
+}
+#mdnote-viewer {
+    padding:0 0 0 40px;
+    margin:0;
+}
+
+/* comments */
+#mdnote-comment {
+    /* background-color: #eeeeee; */
+    margin-top:100px;
+}
+#mdnote-comment-button {
+    position:fixed;
+    bottom:0;
+    right:10px;
+    background-color:rgba(0,0,0,0.3);
+    color:white;
+    border-radius:5px 5px 0 0;
+}
+.mdnote-comment {
+    border-top: solid 1px #999;
+}
+.mdnote-new-comment-btn {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width:100%;
+}
+.mdnote-comment .editor{
+    border: solid 1px #eeeeee;
+    border-radius: 5px;
+}
+.mdnote-comment label {
+    padding-left: 10px;
+}
+
+.mdnote-section-left {
+    padding-left:26px;
+    background-color: #333;
+    margin:0;
+}
+
+.mdnote-comment-head {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.mdnote-comment-body {
+    font-size: 0.9em;
+    padding-left: 1em;
+}
+
+.mdnote-section-right {
+    padding:0;
+    margin:0;
+    overflow:scroll;
+    height:93vh;
+    border-left: dotted 1px #999;
+    background-color:white;
+}
+
+.mdnote-notification .unread {
+    background-color: peachpuff;
+}
+
+/* settings */
+.mdnote-settings {
+    overflow: hidden;
+}
+.mdnote-settings-header {
+    height:15vh;
+}
+.mdnote-settings-main {
+    width:100%;
+    min-height:85vh;
+    max-height: 85vh;
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+.mdnote-setting-panel {
+    width:100%;
+}
+.mdnote-settings-main h2 {
+    font-size: 1.5em;
+    border-bottom: solid 1px #333;
+    display: block;
+}
+.mdnote-info-menu {
+    position:fixed;
+    z-index:10;
+    right:10px;
+    top:10px;
+    margin:0;
+    padding:0;
+}
+.mdnote-remote-publish table{
+    width: 100%;
+}
+.mdnote-remote-publish table input{
+    width: 70%;
+}
+
+/* exploer */
+.mdnote-explorer-btn {
+    position:fixed;
+    z-index:5;
+    line-height:60px;
+    min-width:30px !important;
+    left:0;
+    top:40%;
+    border-radius:0 10px 10px 0;
+    margin:0;
+    padding:0;
+}
+#mdnote-explorer {
+    position:relative;
+    width:100%;
+    height:100vh;
+    padding-left:0;
+    padding-right:0;
+}
+/*#mdnote-explorer.ng-hide-add,
+#mdnote-explorer.ng-hide-remove {
+  -webkit-transition:all linear 0.5s;
+  -moz-transition:all linear 0.5s;
+  -o-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+  display:block!important;
+}
+#mdnote-explorer.ng-hide-add.ng-hide-add-active,
+#mdnote-explorer.ng-hide-remove {
+    transform-origin:left left;
+    transform:scale(0,1);
+}
+#mdnote-explorer.ng-hide-remove.ng-hide-remove-active,
+#mdnote-explorer.ng-hide-add {
+    transform-origin:left left;
+    transform:scale(1,1);
+}*/
+#mdnote-explorer .mdnote-explorer-header {
+    width:100%;
+    height:14vh;
+}
+#mdnote-explorer .mdnote-explorer-tree {
+    width:100%;
+    height:80vh;
+    max-height:80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.white-text *{
+    color: white;
+}
+.black-text *{
+    color: #333;
+}
+
+/* search */
+#mdnote-explorer .mdnote-search-result {
+    position: absolute;
+    width:100%;
+    height:80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index:2;
+    background-color: #333;
+}
+.mdnote-search-title {
+    padding-top:20px;
+    padding-bottom:7px;
+    padding-right:8px;
+    border-top: solid 1px white;
+    margin-bottom:10px;
+    display:block;
+}
+.mdnote-search-result ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.mdnote-search-result li{
+    margin-left:10px;
+    font-size:1em;
+    white-space:nowrap;
+}
+/* file */
+input.file{
+  display:none;
+}
+.mdnote-file-select *{
+    cursor:pointer;
+}
+
+/* tree */
+.mdnote-tree ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.mdnote-tree ul li{
+    margin-left:10px;
+    font-size:1em;
+    white-space:nowrap;
+}
+
+/* file input */
+.file input{
+  display:none;
+}
+.file md-icon{
+  cursor:pointer;
+}
+
+/* publish dialog */
+#mdnote-publish {
+    min-width:80%;
+    max-width:80%;
+}
+#mdnote-publish table {
+    margin: 0 auto;
+}
+#mdnote-publish .mdnote-error {
+    text-align:center;
+}
+
+/* scroll bar */
+*::-webkit-scrollbar
+{
+        overflow:hidden;
+        width:2px;
+        background:rgba(0,0,0,0);
+}
+*::-webkit-scrollbar:horizontal
+{
+        height:2px;
+}
+*::-webkit-scrollbar-button
+{
+       display:none;
+}
+*::-webkit-scrollbar-piece
+{
+        background:darkorange;
+}
+*::-webkit-scrollbar-piece:start
+{
+        background:darkorange;
+}
+*::-webkit-scrollbar-thumb
+{
+        background:darkorange;
+}
+*::-webkit-scrollbar-corner
+{
+        background:rgba(0,0,0,0);
+}
+
+/* basic styles */
+a {
+    cursor: pointer;
+}
+a.mdnote-link {
+    color: #6892fe;
+    text-decoration: underline;
+}
+a.mdnote-fixed-close-btn {
+    position:fixed;
+    z-index:10;
+    right:20px;
+    top:40px;
+    margin:0;
+    padding:7px;
+}
+a.mdnote-fixed-close-btn:hover {
+    background-color: orange;
+}
+a.mdnote-close-btn {
+    position:absolute;
+    z-index:10;
+    right:20px;
+    top:40px;
+    margin:0;
+    padding:7px;
+}
+a.mdnote-close-btn:hover {
+    background-color: orange;
+}
+a.mdnote-close-btn-mini {
+    right:5px;
+    top:5px;
+}
+.mdnote-error {
+    color: darkred;
+}
+body {
+    background-color: #333;
+}
+
+.mdnote-help {
+    color:#aaa;
+    font-size:0.9em;
+}
+
+/* viewer */
+#mdnote-viewer * {
+    white-space:normal;
+}
+#mdnote-viewer img {
+    max-width:100%;
+}
+
+#mdnote-viewer {
+    padding: 0 10px;
+}
+#mdnote-viewer h1 {
+    font-size: 1.8em;
+}
+#mdnote-viewer h1,
+#mdnote-viewer h2 {
+    border-bottom: solid 1px #333;
+    padding-bottom: 5px;
+}
+
+#mdnote-viewer h1,
+#mdnote-viewer h2,
+#mdnote-viewer h3,
+#mdnote-viewer h4,
+#mdnote-viewer h5,
+#mdnote-viewer h6 {
+    margin-bottom: 15px;
+}
+
+#mdnote-viewer code {
+    background-color: #efefff;
+    padding:0;
+}
+#mdnote-viewer pre {
+    background-color: #efefff;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: pre-wrap;
+    padding:6px 6px 10px 6px;
+    border: dotted 1px #dedede;
+}
+
+#mdnote-viewer blockquote {
+    border-left: solid 5px gainsboro;
+    padding-left: 10px;
+    background-color:#fafafa;
+}
+
+#mdnote-viewer table,
+#mdnote-viewer table th,
+#mdnote-viewer table td {
+    border-collapse: collapse;
+    border:1px solid #333;
+    padding: 3px 5px;
+}
+#mdnote-viewer table th {
+    background-color: #eeeeee;
+}
+
+.mdnote-settings-table td {
+    vertical-align: top;
+}
+
+/* overrides */
+* {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
+}
+md-progress-linear .md-bar {
+    background-color:darkorange !important;
+}
+md-progress-linear[md-mode=indeterminate] .md-container {
+    top:0 !important;
+}

@@ -1,0 +1,9 @@
+node_modules
+electron/node_modules
+bower_components
+build
+!.gitkeep
+MdNote-darwin-x64
+MdNote-win32-x64
+windows_installer/
+www/scripts/appBundle.js

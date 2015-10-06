@@ -1,0 +1,13 @@
+{
+	"version": "0.1.0",
+	"isShellCommand": true,
+	"showOutput": "silent",
+	"windows": {
+        "command": ".\\debug.bat",
+		"args": [""]
+    },
+    "osx": {
+		"command": "./debug.sh",
+		"args": [""]
+    }
+}
