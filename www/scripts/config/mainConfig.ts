@@ -18,6 +18,6 @@ app.config(['$translateProvider', ($translateProvider) => {
     $translateProvider.useSanitizeValueStrategy('escapeParameters');
     /* HACK:it is not possible to correctly get the locale on OSX */
     /*$translateProvider.determinePreferredLanguage();*/
-    $translateProvider.preferredLanguage('ja');
-    $translateProvider.fallbackLanguage('en');
+    $translateProvider.preferredLanguage('en');
+    $translateProvider.fallbackLanguage('ja');
 }]);

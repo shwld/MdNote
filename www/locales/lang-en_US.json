@@ -39,13 +39,13 @@
 	"settings": {
 		"pageTitle": "Settings",
 		"rootDir": {
-			"title": "root directory",
+			"title": "Root directory",
 			"select": "select",
 			"selected": "change",
 			"add": "add"
 		},
 		"editorType": {
-			"title": "editor type",
+			"title": "Editor type",
 			"help": "To reflect the settings, restart the app."
 		},
 		"comment": {
