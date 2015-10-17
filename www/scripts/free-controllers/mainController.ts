@@ -70,6 +70,10 @@ module MdNote {
                 $scope.editor.dropFile(e, (imageFile) => {
                     $scope.current.saveImage(imageFile, "png", (writeName) => {
                         doc.replaceSelection("![](" + writeName + " )");
+                        $timeout(() => {
+                            $scope.isImageLoaded = false;
+                            $scope.updateViewerWithImages();
+                        });
                     });
                 }, (filePath) => {
                     $scope.openFile(filePath);
@@ -338,7 +342,10 @@ module MdNote {
                         if (clipboard.hasImage()) {
                             $scope.current.saveImage(clipboard.getPngImage(), "png", (writeName) => {
                                 __doc.replaceSelection("![](" + writeName + " )");
-                                $scope.updateViewerWithImages();
+                                $timeout(() => {
+                                    $scope.isImageLoaded = false;
+                                    $scope.updateViewerWithImages();
+                                }, 500);
                             });
                         }
                     }

@@ -1,6 +1,6 @@
 {
   "main": "main.js",
-  "name": "MdNote-Free",
+  "name": "MdNote-Lite",
   "description": "markdown notebook",
   "version": "1.0.0",
   "devDependencies": {
